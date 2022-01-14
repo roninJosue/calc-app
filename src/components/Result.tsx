@@ -1,7 +1,11 @@
-import React from 'react'
+import React, {FC} from 'react'
 import PropTypes from 'prop-types'
 
-const Result = ({ value }) => (
+type Prop = {
+  value: string
+}
+
+const Result: FC<Prop> = ({ value }) => (
   <div className="result">
     <span>{value}</span>
   </div>
